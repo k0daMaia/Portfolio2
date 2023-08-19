@@ -1,0 +1,170 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-background: #00030C;
+    --font-principal: 'inter';
+    --botao-azul-efeito:#4e85c7;
+}
+
+body {
+    background-color: var(--cor-background);
+    color: var(--branco-principal);
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.principal {
+    background-image: url(./img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+    
+}
+
+.container__button {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+  
+
+}
+.button_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container__title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__image {
+    margin: 1em 0 2em  0;
+}
+
+.container__visit  {
+    margin: 0 6em;
+}
+
+.secundario__image {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__title {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+.descricao__text {
+    color: var(--cinza-secundario);
+}
+
+.secundario__button {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+   
+    
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__title {
+    font-size: 48px;
+    color: var(--branco-principal);
+
+}
+
+.list__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.footer {
+    text-align: center;
+    padding: 1em 5em;
+    
+   
+}
+
+.list__link a {
+    color: var(--branco-principal);
+    text-decoration: none;
+   
+
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 1em;
+    padding: 0.5em 0;
+}
+
+.footer__text {
+    color: var(--cinza-secundario);
+    margin: 1em;
+    font-size: 15px;
+}
+
+.footer__logo {
+    margin-bottom: 1em;
+}
+
+.list__link a:hover  {
+    color: var(--botao-azul);
+
+}
+
+.list__link  a:active  {
+    color: purple;
+}
+
+.container__button:hover {
+    color: var(--cor-background);
+    border: 2px solid  var(--botao-azul);
+   background-color: var(--botao-azul);
+
+}
